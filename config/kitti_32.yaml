@@ -1,0 +1,18 @@
+device: 0
+dataset: "kitti"
+lidar_size: [32, 750] # FOV 120 -> FOV // 0.16
+
+model:
+  backbone: "efficientnetb0"
+  bin_size: 256
+
+train:
+  tag: "kitti_32"
+  batch_size: 12
+  epochs: 25
+  lr: 0.0003
+  lr_decay: 0.1
+  decay_epoch: [10]
+  weight_decay: 0.0005
+  alpha: 10.
+  beta: 0.001
