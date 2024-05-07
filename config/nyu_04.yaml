@@ -1,0 +1,18 @@
+device: 0
+dataset: "nyu"
+lidar_size: [4, 60]
+
+model:
+  backbone: "efficientnetb0"
+  bin_size: 256
+
+train:
+  tag: "nyu_04"
+  batch_size: 80
+  epochs: 20
+  lr: 0.0005
+  lr_decay: 0.1
+  decay_epoch: [10]
+  weight_decay: 0.0005
+  alpha: 10.
+  beta: 0.001
